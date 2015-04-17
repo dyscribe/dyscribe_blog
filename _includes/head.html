@@ -1,0 +1,88 @@
+<meta charset="utf-8">
+<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+{% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
+{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+{% if page.author %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+{% endif %}
+<script charset="utf-8">
+    (function (d,c) {d[c] = d[c].replace(/\bno-js\b/i, 'js')})(document.documentElement, 'className');
+</script>
+
+<style type="text/css">
+/*Basic CSS Styles */
+body { font-family: "Arial", "Helvetica", sans-serif; }
+.navigation-wrapper, .search-form { display: none; }
+header.entry-header { margin: auto; text-align: center; }
+</style>
+
+{% if site.owner.google.verify %}<!-- Webmaster Tools verfication -->
+<meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
+{% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}
+
+{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+<link rel="canonical" href="{{ canonical }}">
+<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% if site.owner.google.plus %}<link rel="author" href="//plus.google.com/+{{ site.owner.google.plus }}?rel=author">{% endif %}
+
+<!-- Responsive Meta Data -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr async -->
+<script async src="{{ site.url }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script async src="{{ site.url }}/assets/js/vendor/html5shiv.min.js"></script>
+  <script async src="{{ site.url }}/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Twitter Cards Meta Data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@dyscribe">
+<meta name="twitter:creator" content="@dyscribe">
+{% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+{% if page.excerpt %}
+  <meta name="twitter:description" content="{{ page.excerpt }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.image %}
+  <meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.image.card }}">
+{% else %}
+  <meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.image.feature }}">
+{% endif %}
+
+<!-- Open Graph Meta Data -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.excerpt }}">
+<meta property="og:image" content="{{ site.url }}/images/{{ page.image.card }}"/>
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="250" />
+
+<!-- Fav and Apple Touch Precomposed Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/logo/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/images/logo/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/images/logo/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/images/logo/apple-touch-icon-144x144-precomposed.png">

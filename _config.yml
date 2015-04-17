@@ -1,0 +1,47 @@
+# Site wide configuration
+
+destination: ../html/
+title: dyscribe.com
+subclaim: Mind. Code. Design.
+locale: en_US
+search: true
+baseurl: "/"
+url: "https://dyscribe.com"
+asset: "//dyscribe.com/downloads/"
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Kai Birkenfeld
+  avatar: logos/avatar_logo-150-2x.png
+  email: mail@dyscribe.com
+  disqus-shortname: dyscribe
+  twitter: dyscribe
+  github: dyscribe
+  flattr: dyscribe
+  google:
+    plus: +KaiBirkenfeld
+    verify: nwQS1Sfw2IfsArrmhJ1as61Pqe5-aaHzZdf_DKk-Yt4
+    ad-client:
+    ad-slot:

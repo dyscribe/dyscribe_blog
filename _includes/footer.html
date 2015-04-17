@@ -1,0 +1,10 @@
+{% if site.owner.google.ad-client and site.owner.google.ad-slot %}{% include ad-footer.html %}{% endif %}
+
+<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a> using a highly customized version of the <a href="//mademistakes.com/so-simple/">"So Simple"</a> theme.</span>
+<div class="social-icons">
+	{% if site.owner.twitter %}<a href="//twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="ico-twitter-round"></i></a>{% endif %}
+	{% if site.owner.facebook %}<a href="//facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name}} on Facebook" target="_blank"><i class="ico-facebook-round"></i></a>{% endif %}
+	{% if site.owner.google.plus %}<a href="https://plus.google.com/{{ site.owner.google.plus }}" rel="publisher" target="_blank"><i class="ico-googleplus-round"></i></a>{% endif %}
+	{% if site.owner.github %}<a href="//github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="ico-github-round"></i></a>{% endif %}
+  <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="ico-rss-round"></i></a>
+</div><!-- /.social-icons -->

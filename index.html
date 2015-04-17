@@ -1,0 +1,19 @@
+---
+layout: main
+excerpt: "A complete overview of all blog articles and tutorials sorted by date."
+---
+
+<ul class="post-list">
+  {% for post in site.posts limit:10 %}
+  <li>
+      <article>
+          <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>
+              <h2>
+                  <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <div class="post-excerpt">{{ post.excerpt }}</div>
+              <div class="cta-button"><a href="{{ site.url }}{{ post.url }}">Read Full Article</a></div>
+      </article>
+  </li>
+  {% endfor %}
+</ul>
