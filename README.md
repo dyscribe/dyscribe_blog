@@ -1,30 +1,18 @@
-# So Simple Theme
+# dyscribe.com blog
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](//mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](//mademistakes.com).
+[![Build Status](https://travis-ci.org/dyscribe/dyscribe_blog.svg?branch=master)](https://travis-ci.org/dyscribe/dyscribe_blog/)
 
-[![Build Status](https://travis-ci.org/mmistakes/so-simple-theme.svg?branch=master)](https://travis-ci.org/mmistakes/so-simple-theme)
+This is the public repo of my blog, available at [dyscribe.com](https://dyscribe.com).
 
-## So Simple Theme is all about:
+It contains a repsonsive [Jekyll](http://jekyllrb.com/) template derived / built upon the [So Simple Theme](https://github.com/mmistakes/so-simple-theme) by [Michael Rose](https://github.com/mmistakes)
+as well as all the assets and articles available there.
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations.
-* Optional large feature images for posts and pages.
-* [Custom 404 page](//mmistakes.github.io/so-simple-theme/404.html) to get you started.
-* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
-* Support for Disqus Comments
+## Notes
 
-![screenshot of So Simple Theme](//mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
+> As this is my digital playground, this template has been strongly modified and crafted by best means and understanding. It was not intended or built to be easily customizable for other purposes or projects. It is fine to do so, just saying that this was not the scope.
+If you are looking for a clean and customizable Jekyll Template, you might be better of with the [original version of this])(https://github.com/mmistakes/so-simple-theme)...
 
-See a [live version of So Simple](//mmistakes.github.io/so-simple-theme/) hosted on GitHub.
+## Collaboration
 
----
-
-## Getting Started
-
-So Simple takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
-
-To learn how to install and use this theme check out the [Setup Guide](//mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+Collaboration is highly appreciated.
+If you find bugs in the code, misspellings in articles, or security breaches feel free to open up a pull request.
