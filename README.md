@@ -15,4 +15,4 @@ If you are looking for a clean and customizable Jekyll Template, you might be be
 ## Collaboration
 
 Collaboration is highly appreciated.
-If you find bugs in the code, misspellings in articles, or security breaches feel free to open up a pull request.
+If you find bugs in the code, misspellings in articles, or security breaches feel free to open up a pull request.:q_:q
