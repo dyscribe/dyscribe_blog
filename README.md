@@ -16,5 +16,3 @@ If you are looking for a clean and customizable Jekyll Template, you might be be
 
 Collaboration is highly appreciated.
 If you find bugs in the code, misspellings in articles, or security breaches feel free to open up a pull request.
-
-// Testing Submodule update
