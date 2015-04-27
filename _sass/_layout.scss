@@ -156,6 +156,10 @@ span + .entry-title {
 			border-bottom: 1px solid $custom-color;
 		}
 	}
+	img {
+		border: 1px solid #ccc;
+		box-shadow: 1px 1px 10px #9a9a9a;
+	}
 }
 .post-list {
 	li > a {
