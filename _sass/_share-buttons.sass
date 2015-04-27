@@ -1,0 +1,52 @@
+// Social Icons
+// --------------------------------------------------
+
+.social-icons
+  margin: 1em 0 2em
+  a
+    padding: 4px 8px
+    &:hover
+      color: $black
+
+.sidebar-share
+  display: block
+  width: 100%
+
+@media (max-width: 999px)
+  .sidebar-share
+    display: none
+
+span.social-share-twitter a,
+span.social-share-facebook a,
+span.social-share-googleplus a,
+span.social-share-flattr a,
+span.entry-comments
+  i
+    transition: none
+  &:hover
+    padding-left: 10px
+
+@media (max-width: 390px)
+  span.social-share-twitter a,
+  span.social-share-facebook a,
+  span.social-share-googleplus a,
+  span.social-share-flattr a
+    font-size: 0.7rem
+
+.share-after-reading
+  h4
+    text-align: center
+    padding: 60px 0 30px 0
+  span.social-share-twitter,
+  span.social-share-facebook,
+  span.social-share-googleplus
+    margin: 0px
+    display: inline-block
+    max-width: 24%
+    min-width: 80px
+    width: 100%
+  i
+    background-color: $text-color
+    color: $white
+    padding: 8px
+    border-radius: 100%
