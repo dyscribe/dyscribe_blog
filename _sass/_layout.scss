@@ -128,9 +128,11 @@ span + .entry-title {
 }
 .entry-content {
 	@include span-columns(12);
-	background-color: $white;
-	border: 1px solid #ccc;
-	padding: 20px;
+	@media (min-width: 400px) {
+		background-color: $white;
+		border: 1px solid #ccc;
+		padding: 20px;
+	}
 	p:first-child {
 		margin-top: 0;
 		font-family: "Roboto Slab", serif;
