@@ -275,14 +275,14 @@ span + .entry-title {
 
 .footer-wrapper {
 	@include clearfix;
-	margin: 2em auto;
+	padding: 20px;
 	text-align: center;
 	font-family: $serif-font;
 	@include font-size(14);
 	font-style: italic;
-	color: lighten($text-color,20);
+	color: #ccc;
 	a {
-		color: lighten($text-color,20);
+		color: #ccc;
 	}
 	.social-icons i {
 		font-size: 2em;
