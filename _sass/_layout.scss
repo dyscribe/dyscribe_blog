@@ -133,6 +133,8 @@ span + .entry-title {
 		font-family: "Roboto Slab", serif;
 		font-weight: 700;
 		color: #444;
+		background-color: $white;
+		border: 1px solid #ccc;
 	}
 	@include media($large) {
 		@include span-columns(9.5);
