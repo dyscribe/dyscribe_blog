@@ -278,7 +278,7 @@ span + .entry-title {
 	padding: 20px;
 	text-align: center;
 	font-family: $serif-font;
-	margin: 0;
+	margin: 0 !important;
 	@include font-size(14);
 	font-style: italic;
 	color: $light-grey;
@@ -288,13 +288,14 @@ span + .entry-title {
 		border-bottom: 1px dotted $custom-color;
 		&:hover {
 			color: lighten($custom-color, 15%);
-			border-bottom: 1px solid lighten($custom-color, 15%);
+			border-bottom: 1px solid darken($custom-color, 15%);
 		}
 	}
 	.social-icons i {
 		font-size: 2em;
+		border-bottom: none;
 		&:hover {
-			color: lighten($custom-color, 15%);
+			color: darken($custom-color, 15%);
 		}
 	}
 }
