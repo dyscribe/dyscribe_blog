@@ -134,7 +134,7 @@ span + .entry-title {
 	@include span-columns(12);
 	@media (min-width: 999px) {
 		background-color: $white;
-		border: 1px solid #ccc;
+		border: 1px solid $light-grey;
 		padding: 40px;
 	}
 	p:first-child {
@@ -280,12 +280,17 @@ span + .entry-title {
 	font-family: $serif-font;
 	@include font-size(14);
 	font-style: italic;
-	color: #ccc;
+	color: $light-grey;
+	background-color: $footer-color;
 	a {
-		color: #ccc;
+		color: $light-grey;
+		&:hover
+			color: lighten($light-grey 15)
 	}
 	.social-icons i {
 		font-size: 2em;
+		&:hover
+			color: lighten($light-grey 15)
 	}
 }
 
