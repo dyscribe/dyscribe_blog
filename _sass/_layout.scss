@@ -2,7 +2,11 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: $body-color;
+	background-color: $white;
+	@media (min-width: 999px) {
+		background-color: $body-color;
+	}
+
 }
 
 // Main
@@ -128,7 +132,7 @@ span + .entry-title {
 }
 .entry-content {
 	@include span-columns(12);
-	@media (min-width: 400px) {
+	@media (min-width: 999px) {
 		background-color: $white;
 		border: 1px solid #ccc;
 		padding: 20px;
