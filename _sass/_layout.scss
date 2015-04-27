@@ -285,14 +285,16 @@ span + .entry-title {
 	background-color: $footer-color;
 	a {
 		color: $custom-color;
+		border-bottom: 1px dotted $custom-color;
 		&:hover {
-			color: lighten($custom-color, 15%)
+			color: lighten($custom-color, 15%);
+			border-bottom: 1px solid lighten($custom-color, 15%);
 		}
 	}
 	.social-icons i {
 		font-size: 2em;
 		&:hover {
-			color: lighten($custom-color, 15%)
+			color: lighten($custom-color, 15%);
 		}
 	}
 }
