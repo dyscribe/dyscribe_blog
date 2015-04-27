@@ -181,7 +181,13 @@ span + .entry-title
     +font-size(12, no)
     text-transform: uppercase
     display: inline-block
+    margin: 10px 0px 0px 0px
+    padding: 5px
+    border-bottom: 3px solid $custom-color
     +media($medium)
+      margin: 0px 0px 0px 10px
+      padding: 5px 10px
+    +media($large)
       +font-size(14, no)
       float: right
       display: inline
@@ -190,13 +196,7 @@ span + .entry-title
       margin: 0px -50px 0px 10px
       border-bottom: none
       color: $white
-    @media (max-width: 999px)
-      margin: 0px 0px 0px 10px
-      padding: 5px 10px
-    @media (min-width 400px)
-      margin: 10px 0px 0px 0px
-      padding: 5px
-      border-bottom: 3px solid $custom-color
+
 
 // Tag index
 .tag-box
