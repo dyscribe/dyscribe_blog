@@ -205,14 +205,15 @@ Congrats! You're running dashing!
 
 It took me a while to trial and error through different tutorials. Here is a bunch of links I came accross when working on this project. You might find some of these helpful, if the above does not work for you...
 
-##### Wifi Setup
+**Wifi Setup**
 
 * [howtogeek tutorial](//www.howtogeek.com/167425/how-to-setup-wi-fi-on-your-raspberry-pi-via-the-command-line/)
 * [raspify tutorial](//www.raspyfi.com/wi-fi-on-raspberry-pi-a-simple-guide/)
 * [maketecheasier tutorial](//www.maketecheasier.com/setup-wifi-on-raspberry-pi/)
 * [suntimebox article](//www.suntimebox.com/raspberry-pi-tutorial-course/week-3/day2-1-wireless-network-setup/)
 
-##### Dashing & Dependency Installation
+**Dashing & Dependency Installation**
+
  * [stackexchange: apt get](//raspberrypi.stackexchange.com/questions/9307/apt-get-installation-doesnt-work-on-raspberry-pi)
  * [raspberrypi.org ruby documentation](//www.raspberrypi.org/documentation/linux/software/ruby.md)
  * [tutplus.com ruby installation](//computers.tutsplus.com/tutorials/how-to-install-ruby-on-rails-on-raspberry-pi--cms-21421)
