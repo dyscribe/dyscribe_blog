@@ -285,12 +285,12 @@ span + .entry-title {
 	a {
 		color: $light-grey;
 		&:hover
-			color: lighten($light-grey 15)
+			color: lighten($light-grey, 15%)
 	}
 	.social-icons i {
 		font-size: 2em;
 		&:hover
-			color: lighten($light-grey 15)
+			color: lighten($light-grey, 15%)
 	}
 }
 
