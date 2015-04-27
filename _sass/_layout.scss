@@ -278,20 +278,21 @@ span + .entry-title {
 	padding: 20px;
 	text-align: center;
 	font-family: $serif-font;
+	margin: 0;
 	@include font-size(14);
 	font-style: italic;
 	color: $light-grey;
 	background-color: $footer-color;
 	a {
-		color: $light-grey;
+		color: $custom-color;
 		&:hover {
-			color: lighten($light-grey, 15%)
+			color: lighten($custom-color, 15%)
 		}
 	}
 	.social-icons i {
 		font-size: 2em;
 		&:hover {
-			color: lighten($light-grey, 15%)
+			color: lighten($custom-color, 15%)
 		}
 	}
 }
