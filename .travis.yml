@@ -1,22 +1,20 @@
 language: ruby
 rvm:
   - 2.1
+language: node_js
+node_js:
+  - 0.11
+  - 0.10
 
 before_install:
   - export NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-script:
-  - bundle exec jekyll build --drafts
-#  - bundle exec htmlproof ./_site
-
-language: node_js
-node_js:
-  - "0.11"
-  - "0.10"
 before_script:
   - npm install -g gulp
-script: gulp
 
+script:
+  - bundle exec jekyll build --drafts
+  - gulp
 
 notifications:
   email: false
