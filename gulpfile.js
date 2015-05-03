@@ -48,15 +48,14 @@ gulp.task('sass', function () {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('./assets/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('./assets/css'));
 });
 
 gulp.task('critical', function () {
     critical.generate({
-        base: './',
-        src: '_site/index.html',
-        css: '_site/css/screen.css',
-        dest: '_includes/critical.css',
+        base: '../html',
+        src: './_includes/head.html',
+        css: './assets/css/critical.css',
+        dest: './_includes/critical.css',
         width: 320,
         height: 480,
         minify: true
