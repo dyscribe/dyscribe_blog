@@ -3,6 +3,7 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var critical    = require('critical');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -48,6 +49,18 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./assets/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('./assets/css'));
+});
+
+gulp.task('critical', function () {
+    critical.generate({
+        base: './',
+        src: '_site/index.html',
+        css: '_site/css/screen.css',
+        dest: '_includes/critical.css',
+        width: 320,
+        height: 480,
+        minify: true
+    });
 });
 
 /**
