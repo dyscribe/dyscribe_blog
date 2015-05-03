@@ -58,5 +58,5 @@ AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
 # Custom error pages
 # ErrorDocument 401 /error/401.php
 # ErrorDocument 403 /error/403.php
-ErrorDocument 404 /error/404.html
+ErrorDocument 404 //dyscribe.com/error/404.html
 # ErrorDocument 500 /error/500.php
