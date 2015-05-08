@@ -212,13 +212,24 @@ div#page-logo
 #post .entry-header
   text-align: left
 
-#page-title a
+#page-title
   color: #fff
+  text-shadow: none
+  +font-size(30, yes, 40)
+  line-height: 1.5em
+  font-family: $serif-font
+  font-weight: bold
+  +media($medium)
+    +font-size(42, yes, 42)
+  +media($large)
+    +font-size(48, yes, 48)
 
 #page-claim
   color: #fff
   margin: 0px
+  display: block
   padding-bottom: 30px
+
 
 #page-logo
   margin-top: 50px
