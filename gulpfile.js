@@ -9,6 +9,8 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
+// Build SASS
+
 gulp.task('sass', function () {
     return gulp.src('./assets/css/main.sass')
         .pipe(sass({
@@ -19,29 +21,24 @@ gulp.task('sass', function () {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('./assets/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('./css'));
 });
 
+// Build the Jekyll Site
 
-/**
- * Build the Jekyll Site
- */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
-/**
- * Rebuild Jekyll & do page reload
- */
+// Rebuild Jekyll & do page reload
+
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
     browserSync.reload();
 });
 
-/**
- * Wait for jekyll-build, then launch the Server
- */
+// Wait for jekyll-build, then launch the Server
+
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
@@ -50,15 +47,9 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     });
 });
 
-/**
- * Compile files from _sass into both _site/css (for live injecting) and site (for future jekyll builds)
- */
+// Watch sass files for changes & recompile
+// Watch html/md files, run jekyll & reload BrowserSync
 
-
-/**
- * Watch sass files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
- */
 gulp.task('watch', function () {
     gulp.watch('./_sass/*.sass', ['sass']);
     gulp.watch("./assets/css/*.sass", ['css', 'jekyll-rebuild']);
@@ -66,8 +57,7 @@ gulp.task('watch', function () {
     gulp.watch(['./index.html', './_layouts/*.html', './_posts/*', './_includes/*'], ['jekyll-rebuild']);
 });
 
-/**
- * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
- */
+// Default task, running just `gulp` will compile the sass,
+// compile the jekyll site, launch BrowserSync & watch files.
+
 gulp.task('default', ['browser-sync', 'watch']);
