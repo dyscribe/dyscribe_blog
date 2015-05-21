@@ -1,13 +1,27 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
+var sourcemaps  = require('gulp-sourcemaps');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var critical    = require('critical');
-
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
+
+gulp.task('sass', function () {
+    return gulp.src('./assets/css/main.sass')
+        .pipe(sass({
+            includePaths: ['sass'],
+            outputStyle: "compressed",
+            onError: browserSync.notify
+        }))
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(gulp.dest('./assets/css'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('./css'));
+});
+
 
 /**
  * Build the Jekyll Site
@@ -39,28 +53,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 /**
  * Compile files from _sass into both _site/css (for live injecting) and site (for future jekyll builds)
  */
-gulp.task('sass', function () {
-    return gulp.src('./assets/css/main.sass')
-        .pipe(sass({
-            includePaths: ['sass'],
-            onError: browserSync.notify
-        }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('./assets/css'))
-        .pipe(browserSync.reload({stream:true}))
-});
 
-gulp.task('critical', function () {
-    critical.generate({
-        base: '../html',
-        src: './_includes/head.html',
-        css: './assets/css/critical.css',
-        dest: './_includes/critical.css',
-        width: 320,
-        height: 480,
-        minify: true
-    });
-});
 
 /**
  * Watch sass files for changes & recompile
@@ -68,7 +61,7 @@ gulp.task('critical', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('./_sass/*.sass', ['sass']);
-    gulp.watch("./assets/css/main.sass", ['css', 'jekyll-rebuild']);
+    gulp.watch("./assets/css/*.sass", ['css', 'jekyll-rebuild']);
     gulp.watch("./assets/js/*.js", ['js', 'jekyll-rebuild']);
     gulp.watch(['./index.html', './_layouts/*.html', './_posts/*', './_includes/*'], ['jekyll-rebuild']);
 });
