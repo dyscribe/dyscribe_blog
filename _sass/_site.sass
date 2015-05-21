@@ -45,29 +45,18 @@ h1
 h2
   +font-size(32)
   color: $base-color
+  @media (max-width: 768px)
+    font-size: 1.5rem
+
 
 h2:not(:first-child)
   margin-bottom: 2.5rem
   margin-top: 3rem
 
-h5
-  font-weight: 300
-  background-color: #7dc576
-  color: #fff
-  padding: 8px 0px 8px 10px
-  margin-left: -10px
-  max-width: 70px
-  margin-bottom: 0px !important
-
-@media (max-width: 768px)
-  h2
-    font-size: 1.5rem
 
 h3
   +font-size(28)
-
-@media (max-width: 768px)
-  h3
+  @media (max-width: 768px)
     font-size: 1.2rem
 
 h4
@@ -75,6 +64,13 @@ h4
 
 h5
   +font-size(20)
+  font-weight: 300
+  background-color: #7dc576
+  color: #fff
+  padding: 8px 0px 8px 10px
+  margin-left: -10px
+  max-width: 70px
+  margin-bottom: 0px !important
 
 h6
   +font-size(18)
