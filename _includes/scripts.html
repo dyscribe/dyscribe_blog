@@ -10,7 +10,7 @@
 <script type="text/javascript">
 $script('{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js', function () {
     $script('{{ site.url }}/assets/js/scripts.min.js', 'plugins');
-    $script('{{ site.url }}/assets/js/plugins/stickyMojo.js', 'plugins');
+    $script('{{ site.url }}/assets/js/plugins/jquery.sticky.js', 'plugins');
     {% if site.search %}
     $script.ready('plugins', function() {
              var bs = {
@@ -45,7 +45,7 @@ $script('{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js', function () {
     });
     {% endif %}
     $(document).ready(function(){
-      $('#sticky-sidebar').stickyMojo({footerID: '#footer', contentID: '#main'});
+      $("#navigation").sticky({topSpacing:0});
     });
 });
 </script>
