@@ -10,6 +10,7 @@
 <script type="text/javascript">
 $script('{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js', function () {
     $script('{{ site.url }}/assets/js/scripts.min.js', 'plugins');
+    $script('{{ site.url }}/assets/js/jquery.sticky.js', 'plugins');
     {% if site.search %}
     $script.ready('plugins', function() {
              var bs = {
@@ -43,6 +44,9 @@ $script('{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js', function () {
               });
     });
     {% endif %}
+    $(document).ready(function(){
+      $("#sticker").sticky({topSpacing:0});
+    });
 });
 </script>
 
@@ -136,6 +140,7 @@ onloadCSS( stylesheet, function() {
     console.log( "CSS has been loaded." );
 });
 </script>
+
 
 
 {% if page.comments %}
