@@ -22,7 +22,7 @@
         </header>
     </div>
     <div class="entry-wrapper">
-      <footer class="entry-meta" id="sticky-sidebar">
+      <aside class="entry-meta" id="sidebar">
         {% if page.author %}
           {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
         {% endif %}
@@ -52,7 +52,7 @@
         </div>
         {% endif %}
         {% if page.ads == true %}{% include ad-sidebar.html %}<!-- /.google-ads -->{% endif %}
-      </footer>
+      </aside>
       <div class="entry-content">
         {{ content }}
         <div class="share-after-reading">

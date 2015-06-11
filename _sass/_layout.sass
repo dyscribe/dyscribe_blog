@@ -84,7 +84,12 @@ span + .entry-title
   padding-right: $gutter
   padding-left: $gutter
 
-.entry-meta, .sidebar-share
+div#sidebar-sticky-wrapper
+  float: left
+  height: auto !important
+
+#sidebar-sticky-wrapper .entry-meta,
+#sidebar-sticky-wrapper .sidebar-share,
   +span-columns(12)
   text-transform: uppercase
   +font-size(14)
@@ -165,6 +170,7 @@ span + .entry-title
     max-width: 100%
   .entry-content
     +span-columns(12)
+    float: right
 
 // Post index layout
 .post-list
