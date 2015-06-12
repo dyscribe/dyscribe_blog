@@ -9,9 +9,6 @@
     (function (d,c) {d[c] = d[c].replace(/\bno-js\b/i, 'js')})(document.documentElement, 'className');
 </script>
 
-<!-- Inline critical css -->
-<style type="text/css">{% include core.css %}</style>
-
 {% if site.owner.google.verify %}<!-- Webmaster Tools verfication -->
 <meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
 {% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}

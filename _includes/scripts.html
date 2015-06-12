@@ -9,10 +9,10 @@
 
 <script type="text/javascript">
 $script('{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js', function () {
-    $script('{{ site.url }}/assets/js/scripts.min.js', 'plugins');
-    $script('{{ site.url }}/assets/js/plugins/jquery.sticky.js', 'plugins');
+    $script('{{ site.url }}/assets/js/scripts.min.js', 'search');
+    $script('{{ site.url }}/assets/js/plugins/jquery.sticky.js', 'sticky');
     {% if site.search %}
-    $script.ready('plugins', function() {
+    $script.ready('search', function() {
              var bs = {
                   close: $(".close-btn"),
                   searchform: $(".search-form"),
@@ -43,10 +43,12 @@ $script('{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js', function () {
                 bs.canvas.removeClass('is-visible');
               });
     });
+    console.log( "Search has been loaded." );
     {% endif %}
-    $(document).ready(function(){
-      $("#navigation").sticky({topSpacing:0});
-      $("#sidebar").sticky({topSpacing:100});
+    $script.ready('sticky', function() {
+        $("#navigation").sticky({topSpacing:0});
+        $("#sidebar").sticky({topSpacing:100});
+        console.log( "Sticky JS has been loaded." );
     });
 });
 </script>
@@ -136,13 +138,11 @@ function onloadCSS( ss, callback ) {
 		ss.onloadcssdefined( callback );
 	}
 }
-var stylesheet = loadCSS( "//dyscribe.com/assets/css/main.css" );
+var stylesheet = loadCSS( "/assets/css/main.css" );
 onloadCSS( stylesheet, function() {
     console.log( "CSS has been loaded." );
-});
+  });
 </script>
-
-
 
 {% if page.comments %}
   {% include disqus_comments.html %}

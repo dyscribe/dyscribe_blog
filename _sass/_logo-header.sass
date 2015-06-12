@@ -65,8 +65,8 @@
 
 // Styling for sticky Navigation
 .is-sticky #navigation
-  background-color: $custom-color
-  transition: background-color 2000ms ease-in
+  background-color: $navigation-color
+  transition: background-color 1000ms ease-in
 
 // Responsive nav toggle stuff
 
@@ -187,8 +187,6 @@ div#page-logo
   margin-bottom: 0
   +animation-duration(1s)
   +animation-delay(0.75s)
-  a
-    color: $black
 
 .site-description
   margin-top: 0
@@ -227,7 +225,9 @@ div#page-logo
   +media($medium)
     +font-size(42, yes, 42)
   +media($large)
-    +font-size(48, yes, 48)
+    +font-size(44, yes, 48)
+  a
+    color: #fff
 
 #page-claim
   color: #fff
