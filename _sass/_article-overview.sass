@@ -1,10 +1,21 @@
-.post-excerpt
+article
+  .entry-image
+    background-size: cover
+    height: auto
+    @media (min-width: 800px)
+      background-size: contain
+      height: 206px
+    h2
+      padding: 40px
+      a.entry-link
+        color: $white
+        text-shadow: 1px 1px 5px $text-color
+  .entry-excerpt
     font-family: $serif-font
     font-size: 1rem
-
-.post-list
-    .cta-button
-        float: left
-        margin: 40px 0 40px 0
-        a
-            font-size: 0.8rem
+    margin-top: 20px
+  .entry-list
+    .cta-button a
+      float: left
+      font-size: 0.8rem
+      margin: 40px 0 40px 0

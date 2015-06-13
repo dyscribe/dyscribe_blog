@@ -5,6 +5,10 @@
 {% if page.author %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
 {% endif %}
+
+<!-- Inline critical css -->
+<style type="text/css">{% include core.css %}</style>
+
 <script>
     (function (d,c) {d[c] = d[c].replace(/\bno-js\b/i, 'js')})(document.documentElement, 'className');
 </script>

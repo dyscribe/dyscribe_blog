@@ -67,6 +67,13 @@
 .is-sticky #navigation
   background-color: $navigation-color
   transition: background-color 1000ms ease-in
+  a,
+  span,
+  i
+    color: $text-color
+    .ico-dyscribe-logo
+      color: $custom-color
+      opacity: 1
 
 // Responsive nav toggle stuff
 
@@ -152,19 +159,19 @@ div#page-logo
   background-position: center
   background-repeat: no-repeat
   background-image: url("/images/logos/avatar_logo-100.png")
-  background-size: 100px
+  background-size: 80px
   height: 100px
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
     background-image: url("/images/logos/avatar_logo-100-2x.png")
   +media($medium)
     background-image: url("/images/logos/avatar_logo-150.png")
-    background-size: 150px
+    background-size: 130px
     height: 150px
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
       background-image: url("/images/logos/avatar_logo-150-2x.png")
   +media($large)
     background-image: url("/images/logos/avatar_logo-200.png")
-    background-size: 200px
+    background-size: 180px
     height: 200px
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
       background-image: url("/images/logos/avatar_logo-200-2x.png")
@@ -178,7 +185,6 @@ div#page-logo
     +media($medium)
       width: 150px
       height: 150px
-
     +media($large)
       width: 200px
       height: 200px
@@ -202,7 +208,6 @@ div#page-logo
 // Post Header Area
 
 #page .header-wrapper
-  background-image: url("//dyscribe.com/images/page_header.jpg")
   background-size: cover
   background-position: center center
   background-repeat: no-repeat

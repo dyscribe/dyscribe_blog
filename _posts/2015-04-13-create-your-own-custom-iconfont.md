@@ -5,14 +5,14 @@ excerpt: "Improve your website performance and stay flexible by using creating y
 categories: blog
 tags: [webdevelopment, design, article]
 image:
-  feature: article-iconfont.jpg
+  feature: article-iconfont_new.jpg
   card: cards/iconfont.jpg
 comments: true
 share: true
 date: 2015-04-13
 ---
 
-The advantages of icon fonts are clear: crisp look on high density displays, [flexibility in size and color](//css-tricks.com/examples/IconFont/) and you can improve your websites performance compared to using regular images. 
+The advantages of icon fonts are clear: crisp look on high density displays, [flexibility in size and color](//css-tricks.com/examples/IconFont/) and you can improve your websites performance compared to using regular images.
 
 ## Custom vs. Pre Built Font
 
@@ -35,10 +35,7 @@ Here's how my current font looks like:
 > The Icomoon web app is pretty minimalistic and self explaining, so I'll leave the details out here. If you're having trouble setting up, feel free to let me know in the comments.
 
 Including the Sass and all font types (svg, woff, eot and ttf) it only weighs 168 Kb, where I have all of the icons used included. Font Awesome for example comes with around 1 Mb.
-Also it allows me to easily adjust existing and add new icons at any time, by opening the `json` file that comes with the package, once you downloaded your Icomoon font. 
+Also it allows me to easily adjust existing and add new icons at any time, by opening the `json` file that comes with the package, once you downloaded your Icomoon font.
 
 ##### Tl;dr
 > If you want to self host your font, Icomoon is the perfect free tool of your choice. Hosted fonts are also available, but require some change.
- 
-
-
