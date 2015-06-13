@@ -22,37 +22,6 @@
         </header>
     </div>
     <div class="entry-wrapper">
-      <footer class="entry-meta" id="sticky-sidebar">
-        {% if page.author %}
-          {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
-        {% endif %}
-        {% if author.avatar contains 'http' %}
-          <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
-        {% else %}
-          <img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
-        {% endif %}
-        <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
-        <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="ico-time"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
-        {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}"><i class="ico-edit"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
-        {% if site.owner.disqus-shortname and page.comments == true %}<span class="entry-comments"><i class="ico-comment"></i> <a href="#disqus_thread">Comment</a></span>{% endif %}
-        {% if page.share %}
-        <div class="sidebar-share">
-            <span class="social-share-twitter">
-                <a target="_blank" href="https://twitter.com/intent/tweet?hashtags={{ page.tags | join: ',' | remove: ' ' }}&text={{ page.title | escape | replace:' ','%20' }}&url={{ site.url }}{{ page.url }}{% if author.twitter %}&via={{ author.twitter }}{% endif %}" title="Share on Twitter" itemprop="Twitter"><i class="ico-twitter-plain"></i> Tweet this!</a>
-            </span>
-            <span class="social-share-facebook">
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" itemprop="Facebook"><i class="ico-facebook-plain"></i> Share on Facebook</a>
-            </span>
-            <span class="social-share-googleplus">
-                <a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" itemprop="GooglePlus"><i class="ico-googleplus-plain"></i> Share on Google+</a>
-            </span>
-            <span class="social-share-flattr">
-                <a target="_blank" href="https://flattr.com/submit/auto?user_id={{ site.owner.flattr }}&url={{ site.url }}{{ page.url }}&title={{ page.title }}&description={{ page.excerpt }}&language=en_US&tags={{ post.tags }}&category=text" title="Flattr this!" itemprop="Flattr"><i class="ico-flattr-plain"></i> Flattr this!</a>
-            </span>
-        </div>
-        {% endif %}
-        {% if page.ads == true %}{% include ad-sidebar.html %}<!-- /.google-ads -->{% endif %}
-      </footer>
       <div class="entry-content">
         {{ content }}
         <div class="share-after-reading">

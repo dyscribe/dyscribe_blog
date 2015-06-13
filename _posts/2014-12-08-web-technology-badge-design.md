@@ -1,5 +1,5 @@
 ---
-layout: post-download
+layout: post
 title:  "Web Technology Badge Design"
 excerpt: "An approach to create logos for responsive web design (RWD) and JavaScript (JS) that are similiar to the current HTML5 and CSS3 Badges."
 categories: blog
@@ -10,8 +10,6 @@ image:
 comments: true
 share: true
 date: 2014-12-08
-loadable-asset: dyscribe_web_technology_badges.zip
-loadable-text: Download PSD Files
 ---
 
 I was looking for badges of current web technologies to use in a presentation. While searching, I found a design approach for an "Responsive Web Design" Logo and liked the general idea. Since I found the execution a bit sloppy I came up with a slight rework an gathered them all in a [downloadable PSD](#download-web-tech-badges).
