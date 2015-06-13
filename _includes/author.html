@@ -1,0 +1,56 @@
+<aside>
+
+  <div id="author">
+    <hr>
+      <div id="author-image">
+        {% if page.author %}
+          {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+        {% endif %}
+        {% if author.avatar contains 'http' %}
+          <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+        {% else %}
+          <img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+        {% endif %}
+      </div>
+
+      <div id="author-description">
+          <span class="author-heading">{{ author.name }}</span>
+          <span id="author-bio">{{ author.bio }}
+      </div>
+
+      <div id="author-share">
+
+        <span class="author-heading">Share</span>
+          <span class="social-share">
+            <a target="_blank" href="https://twitter.com/intent/tweet?hashtags={{ page.tags | join: ',' | remove: ' ' }}&text={{ page.title | escape | replace:' ','%20' }}&url={{ site.url }}{{ page.url }}{% if author.twitter %}&via={{ author.twitter }}{% endif %}" title="Share on Twitter" itemprop="Twitter"><i class="ico-twitter-plain"></i></a>
+          </span>
+          <span class="social-share">
+            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" itemprop="Facebook"><i class="ico-facebook-plain"></i></a>
+          </span>
+          <span class="social-share">
+            <a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" itemprop="GooglePlus"><i class="ico-googleplus-plain"></i></a>
+          </span>
+          <span class="social-share">
+            <a target="_blank" href="https://flattr.com/submit/auto?user_id={{ site.owner.flattr }}&url={{ site.url }}{{ page.url }}&title={{ page.title }}&description={{ page.excerpt }}&language=en_US&tags={{ post.tags }}&category=text" title="Flattr this!" itemprop="Flattr"><i class="ico-flattr-plain"></i></a>
+          </span>
+      </div>
+
+      <div id="author-share">
+
+        <span class="author-heading">Follow</span>
+          <span class="social-follow">
+            <a target="_blank" href="//twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="ico-twitter-round"></i></a>
+          </span>
+          <span class="social-follow">
+            <a target="_blank" href="//facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name}} on Facebook" target="_blank"><i class="ico-facebook-round"></i></a>
+          </span>
+          <span class="social-follow">
+            <a target="_blank" href="https://plus.google.com/{{ site.owner.google.plus }}" rel="publisher" target="_blank"><i class="ico-googleplus-round"></i></a>
+          </span>
+          <span class="social-follow">
+            <a target="_blank" href="//github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="ico-github-round"></i></a>
+          </span>
+      </div>
+  </div>
+</aside>
+<hr>

@@ -31,7 +31,7 @@ body
   width: 100%
   max-width: 46em
   margin: auto
-  padding: 80px 40px 40px 40px
+  padding: 20px 40px 40px 40px
   color: #fff
 
 @media (max-width: 900px)
@@ -114,7 +114,7 @@ span + .entry-title
 
 .entry-content
   width: 100%
-  padding: 0 40px 40px 40px
+  padding: 0 40px 20px 40px
   margin: 40px 0px
   @media (min-width: 999px)
     //background-color: $white
@@ -142,10 +142,6 @@ span + .entry-title
 .post-list
   li > a
     border-bottom-width: 0
-
-// Disqus Comments
-#disqus_thread
-  margin-top: 2em
 
 // Pagination
 .pagination
@@ -242,6 +238,14 @@ span + .entry-title
     &:focus
       background: lighten($border-color, 5)
 
+// Comments
+#comments
+  background-color: $lightest-grey
+  .comments-wrapper
+    max-width: 46em
+    margin: auto
+    padding: 40px
+
 // Footer
 // --------------------------------------------------
 
@@ -253,18 +257,18 @@ span + .entry-title
   margin: 0 !important
   +font-size(14)
   font-style: italic
-  color: $light-grey
+  color: $mid-grey
   background-color: $footer-color
   a
     color: $custom-color
     &:hover
-      color: lighten($custom-color, 15%)
+      color: darken($custom-color, 15%)
   .social-icons i
     font-size: 2em
     border-bottom: none
+    color: $mid-grey
     &:hover
-      color: darken($custom-color, 15%)
-
+      color: $custom-color
 // Search Overlay
 // --------------------------------------------------
 
