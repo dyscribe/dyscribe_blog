@@ -39,7 +39,3 @@ _**Image:** Some JS logo approaches - where the first is a widely known inoffici
 I followed the inspiring mood and came up with this set of bages. They were strongly inspired by the other ones you see in this post, but have been newly build from the ground up. _(The ones for [HTML](//www.w3.org/html/logo/) and CSS are existing ones I found on the web - provided and copyrighted by their respective owners.)_
 
 Feel free to spread, share and comment if you like!
-
-## Download Web Tech Badges
-
-* Contains PSD files with smart objects  _(as zipped archive ~ 3.9 MB)_

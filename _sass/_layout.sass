@@ -143,8 +143,22 @@ span + .entry-title
 
 // Pagination
 .pagination
+  font-size: 0.8em
   margin-top: 2em
   text-align: center
+  a
+    border: 1px solid $pale-green
+    border-radius: 100px
+    cursor: pointer
+    color: $pale-green
+    padding: 5px 20px
+    &#previous
+      float: left
+    &#next
+      float: right
+    &:hover
+      color: $white
+      background-color: $pale-green
 
 // Page layout
 

@@ -27,6 +27,13 @@
 
         {% include author.html %}
 
+        <nav class="pagination" role="navigation">
+          {% if page.previous %}
+            <a id="previous" href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">&lang; &nbsp; Previous Post</a>
+          {% endif %}
+          {% if page.next %}
+            <a id="next" href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">Next Post &nbsp; &rang;</a>
+          {% endif %}
         </nav><!-- /.pagination -->
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
@@ -38,14 +45,6 @@
     {% if site.owner.disqus-shortname and page.comments == true %}
       <div id="disqus_thread"></div><!-- /#disqus_thread -->
     {% endif %}
-    <nav class="pagination" role="navigation">
-      {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous</a>
-      {% endif %}
-      {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next</a>
-      {% endif %}
-    </div>
 </div>
 
 <div class="footer-wrapper">
