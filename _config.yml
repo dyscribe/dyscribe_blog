@@ -6,8 +6,9 @@ subclaim: Mind. Code. Design.
 locale: en_US
 search: true
 baseurl: "/"
-# url: "https://dyscribe.com"
-url: http://localhost:3000
+# For local development switch url paramenter on and off
+url: "https://dyscribe.com"
+# url: http://localhost:3000
 asset: "//dyscribe.com/downloads/"
 
 
