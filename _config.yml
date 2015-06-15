@@ -6,6 +6,7 @@ subclaim: Mind. Code. Design.
 locale: en_US
 search: true
 baseurl: "/"
+# For local development switch url paramenter on and off
 url: "https://dyscribe.com"
 # url: http://localhost:3000
 asset: "//dyscribe.com/downloads/"
@@ -35,6 +36,7 @@ exclude: ["lib", "config.rb", "gulpfile.js", "Capfile", "config", "log", "Rakefi
 # Site owner
 owner:
   name: Kai Birkenfeld
+  bio: I'm a Project Manager & Web Developer <a target="_blank" href="http://www.jimdo.com">@Jimdo</a>. I play in a band called <a target="_blank" href="http://www.zwohandbreit.de">@zwohandbreit</a> and I blog at <a href="//dyscribe.com">dyscribe.com</a>
   avatar: logos/avatar_logo-150-2x.png
   email: mail@dyscribe.com
   disqus-shortname: dyscribe
