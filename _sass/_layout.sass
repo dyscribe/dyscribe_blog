@@ -64,7 +64,7 @@ span + .entry-title
   +font-size(36, yes, 36)
   font-weight: 300
   line-height: 1
-  text-shadow: 1px 1px 5px #666
+  text-shadow: 1px 1px 5px $black
   a
     color: $black
     text-decoration: underline
@@ -124,12 +124,14 @@ span + .entry-title
     color: #444
     +media($large)
       font-size: 1.4em
-
   p > a,
-  li > a
-    color: $pale-green
-    border-bottom: 1px dotted $pale-green
-    word-break: break-word
+  li > a,
+    &:link,
+    &:visited,
+    &:active
+      color: $pale-green
+      border-bottom: 1px dotted $pale-green
+      word-break: break-word
     &:hover
       color: darken($pale-green, 20)
       border-bottom: 1px solid $pale-green
