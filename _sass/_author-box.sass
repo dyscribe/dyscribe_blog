@@ -1,10 +1,10 @@
 div#author
   margin-top: 100px
-  padding-bottom: 140px
-  @media (max-width: 540px)
-    padding-bottom: 200px
-    @media (max-width: 331px)
-    padding-bottom: 300px
+  padding-bottom: 160px
+  @media (max-width: 543px)
+    padding-bottom: 180px
+  @media (max-width: 529px)
+    padding-bottom: 280px
   .author-heading
     color: $dark-grey
     font-weight: bold
@@ -15,7 +15,7 @@ div#author
     max-width: 60px
     margin-right: 20px
     padding-top: 10px
-    @media (max-width: 540px)
+    @media (max-width: 576px)
       max-width: 20%
       margin-right: 5%
     img
@@ -25,7 +25,7 @@ div#author
     float: left
     max-width: 210px
     margin-right: 20px
-    @media (max-width: 540px)
+    @media (max-width: 576px)
       max-width: 70%
       margin-right: 0px
     #author-bio
@@ -52,11 +52,14 @@ div#author
       @media (max-width: 331px)
       max-width: 70%
       margin-left: 25%
+    .share-buttons
+      padding-top: 8px
     span.social-share a i
       border: 1px solid $pale-green
       color: $pale-green
-      padding: 5px
+      padding: 6px
       border-radius: 100%
+      font-size: 1.1em
       &:hover
         color: $white
         background-color: $pale-green
@@ -73,6 +76,6 @@ div#author
       margin-left: 25%
     .social-follow a i
       color: $mid-grey
-      font-size: 1.4em
+      font-size: 1.9em
       &:hover
         color: $pale-green

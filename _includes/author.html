@@ -21,6 +21,7 @@
       <div id="author-share">
 
         <span class="author-heading">Share</span>
+        <div class="share-buttons">
           <span class="social-share">
             <a target="_blank" href="https://twitter.com/intent/tweet?hashtags={{ page.tags | join: ',' | remove: ' ' }}&text={{ page.title | escape | replace:' ','%20' }}&url={{ site.url }}{{ page.url }}{% if author.twitter %}&via={{ author.twitter }}{% endif %}" title="Share on Twitter" itemprop="Twitter"><i class="ico-twitter-plain"></i></a>
           </span>
@@ -33,6 +34,7 @@
           <span class="social-share">
             <a target="_blank" href="https://flattr.com/submit/auto?user_id={{ site.owner.flattr }}&url={{ site.url }}{{ page.url }}&title={{ page.title }}&description={{ page.excerpt }}&language=en_US&tags={{ post.tags }}&category=text" title="Flattr this!" itemprop="Flattr"><i class="ico-flattr-plain"></i></a>
           </span>
+        </div>
       </div>
 
       <div id="author-follow">

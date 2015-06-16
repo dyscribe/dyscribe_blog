@@ -37,7 +37,7 @@ exclude: ["lib", "config.rb", "gulpfile.js", "Capfile", "config", "log", "Rakefi
 owner:
   name: Kai Birkenfeld
   bio: I'm a Project Manager & Web Developer <a target="_blank" href="http://www.jimdo.com">@Jimdo</a>. I play in a band called <a target="_blank" href="http://www.zwohandbreit.de">@zwohandbreit</a> and I blog at <a href="//dyscribe.com">dyscribe.com</a>
-  avatar: logos/avatar_logo-150-2x.png
+  avatar: logos/avatar_logo-100.png
   email: mail@dyscribe.com
   disqus-shortname: dyscribe
   twitter: dyscribe
