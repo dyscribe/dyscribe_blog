@@ -21,7 +21,6 @@ sass:
   sass_dir: _sass
   style: compressed
 
-
 kramdown:
   auto_ids: true
   footnote_nr: 1

@@ -11,7 +11,7 @@
 <div id="main" role="main">
   <article class="hentry">
     <div class="header-wrapper" style="background-image:url({{ site.url }}/images/{{ page.image.feature }})";>
-        {% include navigation.html %}
+        {% include head_navigation.html %}
         <header class="entry-header">
           <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% endfor %}</span>
           {% if page.link %}
@@ -25,7 +25,7 @@
       <div class="entry-content">
         {{ content }}
 
-        {% include author.html %}
+        {% include post_author.html %}
 
         <nav class="pagination" role="navigation">
           {% if page.previous %}
@@ -53,7 +53,7 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}
+{% include footer_scripts.html %}
 
 </body>
 </html>
