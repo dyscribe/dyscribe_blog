@@ -2,7 +2,7 @@
 layout: post
 title:  "UX Design: You Are Thinking it Wrong!"
 excerpt: "An article on the the most common misunderstanding in UX Design."
-categories: blog
+categories: article
 tags: [ux, design, philosophy, article]
 image:
   feature: article-ux-design.jpg
