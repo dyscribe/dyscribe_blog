@@ -2,7 +2,7 @@
 layout: post
 title:  "8 Tools to Improve Your Workflow as a Designer"
 excerpt: "If you are looking to improve your design workflow these 8 tools will do the trick! Become inspired, colaborate or just get things done faster..."
-categories: blog
+categories: article
 tags: [design, workflow, tooling, article]
 image:
   feature: article-design-tools.jpg
