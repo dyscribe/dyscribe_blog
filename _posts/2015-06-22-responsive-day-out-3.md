@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "Responsive Day Out: The Final Breakpoint"
-excerpt: "A short summary of the third _Responsive Day Out_ in Brighton, outlining the conference format, topics and my personal takeaways."
+excerpt: "A short summary of the third "Responsive Day Out" in Brighton, outlining the conference format, topics and my personal takeaways."
 categories: story
 tags: [conference, story, event]
 image:
   feature: article-responsive-day-out.jpg
+  card: cards/responsivedayout.jpg
 comments: true
 share: true
 date: 2015-06-22
@@ -54,7 +55,7 @@ As already mentioned the day was split into 4 topic segments. Each contained 3 t
 ## Takeaways & Learnings
 
 I will not try to cover the actual contents of all the talks here... And luckily I don't have to. Videos of the whole conference will be provided at [responsiveconf.com](//responsiveconf.com), the official audios are already linked.
-Also there is a [nice write-up with more details the day on Hidde de Vries Blog](https://hiddedevries.nl/en/blog/2015-06-20-responsive-day-out-3-the-final-breakpoint/).
+Also there is a [very nice write-up with more details on Hidde de Vries Blog](https://hiddedevries.nl/en/blog/2015-06-20-responsive-day-out-3-the-final-breakpoint/).
 
 But I do want to point out my personal highlights and takeaways:
 
