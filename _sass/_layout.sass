@@ -1,3 +1,8 @@
+*
+  box-sizing: border-box
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+
 body
   margin: 0
   padding: 0
@@ -261,19 +266,27 @@ span + .entry-title
     margin: auto
     padding: 40px
 
+
 // Footer
 // --------------------------------------------------
+footer
+  background-color: $dark-grey
 
 .footer-wrapper
   +clearfix
-  padding: 20px
-  text-align: center
   font-family: $serif-font
-  margin: 0 !important
+  margin: 0 auto !important
   +font-size(14)
   font-style: italic
-  color: $mid-grey
-  background-color: $footer-color
+  color: $light-grey
+  max-width: 50em
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-flow: row wrap
+  justify-content: space-around
   a
     color: $pale-green
     &:hover
@@ -284,6 +297,37 @@ span + .entry-title
     color: $mid-grey
     &:hover
       color: $pale-green
+  .footer-col
+    flex: 1
+    padding: 40px 20px 60px 20px
+    width: 32%
+    @media (max-width: 500px)
+      min-width: 100%
+
+// Contribution
+#contribute
+  span
+    display: block
+  a,
+  &:link,
+  &:active,
+  &:visited
+    display: inline-block
+    background-color: $pale-green
+    color: $white
+    padding: 10px 10px 8px 10px
+    border-radius: 5px
+    margin-top: 5px
+    text-shadow: 1px 1px 0 darken($pale-green, 20%)
+    border-bottom: 2px solid darken($pale-green, 20%)
+    &:hover
+      background-color: lighten($pale-green, 2%)
+      text-shadow: 1px 1px 0 darken($pale-green, 25%)
+      border-bottom: 2px solid darken($pale-green, 25%)
+    i
+      font-size: 1em
+
+
 // Search Overlay
 // --------------------------------------------------
 
