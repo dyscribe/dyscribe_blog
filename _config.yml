@@ -1,6 +1,6 @@
 # Site wide configuration
 
-destination: ../html/
+destination: ../html/dyscribe.com
 title: dyscribe.com
 subclaim: Mind. Code. Design.
 locale: en_US
