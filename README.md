@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/dyscribe/dyscribe_blog.png?label=ready&title=Ready)](https://waffle.io/dyscribe/dyscribe_blog)
 # dyscribe.com blog
 
 [![Build Status](https://travis-ci.org/dyscribe/dyscribe_blog.svg?branch=master)](https://travis-ci.org/dyscribe/dyscribe_blog/)
