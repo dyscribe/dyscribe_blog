@@ -1,20 +1,14 @@
 <footer>
 	<div class="footer-wrapper">
-  	<div class="footer-col">
-			This blog is open source. Read more about the tools in use on this site in the <a href="/about">about section</a>.
+		This blog is open source. Read more about the tools in use on this site in the <a href="/about">about section</a>.
+		<div class="social-icons">
+			{% if site.owner.twitter %}<a href="//twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="ico-twitter-round"></i></a>{% endif %}
+			{% if site.owner.facebook %}<a href="//facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name}} on Facebook" target="_blank"><i class="ico-facebook-round"></i></a>{% endif %}
+			{% if site.owner.google.plus %}<a href="https://plus.google.com/{{ site.owner.google.plus }}" rel="publisher" target="_blank"><i class="ico-googleplus-round"></i></a>{% endif %}
+			{% if site.owner.github %}<a href="//github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="ico-github-round"></i></a>{% endif %}
+			<a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="ico-rss-round"></i></a>
 		</div>
-
-		<div class="footer-col">
-				<div class="social-icons">
-					{% if site.owner.twitter %}<a href="//twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="ico-twitter-round"></i></a>{% endif %}
-					{% if site.owner.facebook %}<a href="//facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name}} on Facebook" target="_blank"><i class="ico-facebook-round"></i></a>{% endif %}
-					{% if site.owner.google.plus %}<a href="https://plus.google.com/{{ site.owner.google.plus }}" rel="publisher" target="_blank"><i class="ico-googleplus-round"></i></a>{% endif %}
-					{% if site.owner.github %}<a href="//github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="ico-github-round"></i></a>{% endif %}
-					<a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="ico-rss-round"></i></a>
-				</div>
-		</div>
-
-		<div class="footer-col" id="contribute">
+		<div id="contribute">
 			<a id="contribute-button" href="//github.com/dyscribe/dyscribe_blog"><i class="ico-github-round"></i> View source on GitHub</a>
 		</div>
 	</div>
