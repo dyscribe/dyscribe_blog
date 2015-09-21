@@ -14,7 +14,7 @@ date: 2015-09-18
 
 > It took me a while to find something that works easily and with no hassle. This is by far the easiest way I could find. If you have questions or ideas for improvement, let me know.
 
-If you need some help in setting Wifi, SSH or other useful things, check out [my other Raspi tutorials here.](//dyscribe.com/tags/#raspberrypi). If you already got these things figured out, here we go with the actual Tutorial:
+If you need some help in setting Wifi, SSH or other useful things, check out [my other Raspi tutorials here](//dyscribe.com/tags/#raspberrypi). If you already got these things figured out, here we go with the actual Tutorial:
 
 ## Installing dependencies
 
@@ -35,12 +35,14 @@ matchbox-window-manager & :
 xset -dpms
 xset s off
 while true; do
-/usr/bin/midori -e Fullscreen -a http://website-to-open.com
+/usr/bin/midori -e Fullscreen -a http://dyscribe.com
 done
 {% endhighlight %}
 
 Close the edited file by hitting `ctrl - X` and save your changes by pressing `y` and `enter`.
-We now have a script that will open a _Midori_ browser with the given url for us. To make it an executable file (that we will automatically run later on) we type:
+We now have a script that will open a _Midori_ browser with the given url for us. Remember to customize the url in the code snippet (`http://dyscribe.com`) with the actual website you want to open in the browser, otherwise it will open this website here.
+
+To make our dashboard script an executable file (that we will run automatically during the next step) we type first change the chmod settings:
 
 `sudo chmod 755 dashboard.sh`
 
@@ -50,9 +52,10 @@ Now we will see if it works by running the script manually:
 
 To exit press `ctrl + alt + F1` and then `ctrl + c`
 
-## Open the website on boot automatically
+## Opening a website automatically on boot
 
-Now we only need to add the following to the `/home/pi/.profile` file. We open it using `sudo nano /home/pi/.profile` and add this to the bottom of the file after the existing content:
+Now we only need to add the following lines to the `/home/pi/.profile` file. We open it using
+`sudo nano /home/pi/.profile` and add this to the bottom of the file after the existing content:
 
 {% highlight bash %}
 #!/bin/bash
@@ -66,3 +69,9 @@ echo "Resolve the connection problems and manually "
 echo "execute xinit /home/pi/dashboard.sh to open the website"
 fi
 {% endhighlight %}
+
+This code will check if the Pi has a working internet connection and then open up the dashboard. Or display the error message, typed below, if no connection is available.
+
+Now save these changes (again by pressing `ctrl + X` and confirming with `y`) and reboot your _Raspi_ by typing `sudo reboot`.
+
+It should now restart opening the website you have defined in the script. You made it!
