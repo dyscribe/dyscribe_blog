@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Boot Raspberry Pi into a Browser in Kiosk mode"
-excerpt: "Make your Raspberry Pi open a website in a browser in kiosk mode as soon as you switch it on."
+title:  "Open a website in fullscreen on a Raspberr Pi"
+excerpt: "This tutorial will show you how to automatically open a website in a fullscreen browser on a Raspberry Pi once you turn it on. We will configure the Pi so that it runs a script by itself, once you switch it on and then opens a website of your choice in a kiosk mode browser."
 categories: raspberrypi tutorial
 tags: [raspberrypi, login, tutorial]
 image:
@@ -14,7 +14,8 @@ date: 2015-09-18
 
 > It took me a while to find something that works easily and with no hassle. This is by far the easiest way I could find. If you have questions or ideas for improvement, let me know.
 
-If you need some help in setting Wifi, SSH or other useful things, check out [my other Raspi tutorials here](//dyscribe.com/tags/#raspberrypi). If you already got these things figured out, here we go with the actual Tutorial:
+Check out [my other Raspi tutorials here](//dyscribe.com/tags/#raspberrypi) if you need help with other topics like setting up Wifi, SSH connection or to remove the login procedure from your Pi.
+If you already got these things figured out, here we go with the actual Tutorial:
 
 ## Installing dependencies
 

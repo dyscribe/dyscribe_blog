@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Installing Raspbian OS on a Raspberry Pi"
-excerpt: "A beginners tutorial and guide on how to install the Raspbian operating system from scratch."
+excerpt: "A beginners tutorial and guide on how to install the Raspbian operating system from scratch. This tutorial is very beginners friendly, so give it a try!"
 categories: raspberrypi tutorial
 tags: [raspberrypi, raspbian, tutorial]
 image:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Boot up Raspberry Pi without login and password"
-excerpt: "Learn how to let your Raspberry Pi boot without being prompted for username and password in 6 easy steps."
+excerpt: "Learn how to let your Raspberry Pi boot without being prompted for username and password in 6 easy steps. This comes very handy, if you want to put your Pi somewhere behind a screen without having a keyboard attached to it."
 categories: raspberrypi tutorial
 tags: [raspberrypi, login, tutorial]
 image:

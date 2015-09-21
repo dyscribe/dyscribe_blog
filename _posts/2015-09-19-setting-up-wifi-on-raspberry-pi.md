@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Boot Raspberry Pi into a Browser in Kiosk mode"
-excerpt: "Make your Raspberry Pi open a website in a browser in kiosk mode as soon as you switch it on."
+title:  "Setting up Wifi for your Raspberry Pi"
+excerpt: "This is a detailed tutorial to show you, how you can configure your Raspberry Pi to automatically connect to a Wifi of your choice. You will need your Raspi and a separate USB Wifi dongle."
 categories: raspberrypi tutorial
 tags: [raspberrypi, login, tutorial]
 image:
