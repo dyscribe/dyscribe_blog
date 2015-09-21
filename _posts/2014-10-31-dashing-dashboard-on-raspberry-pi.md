@@ -6,7 +6,7 @@ categories: raspberrypi tutorial
 tags: [dashing, raspberrypi, tutorial]
 image:
   feature: article-raspberry-pi-dashboard.jpg
-  card:
+  card: cards/raspberry-dashboard.jpg
 comments: true
 share: true
 date: 2014-10-31

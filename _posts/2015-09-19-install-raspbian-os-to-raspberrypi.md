@@ -6,7 +6,7 @@ categories: raspberrypi tutorial
 tags: [raspberrypi, raspbian, tutorial]
 image:
   feature: article-raspberry-pi-setup.jpg
-  card:
+  card: cards/raspberry-setup.jpg
 comments: true
 share: true
 date: 2015-09-18

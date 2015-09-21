@@ -20,21 +20,9 @@
 
       <div id="author-share">
 
-        <span class="author-heading">Share</span>
-        <div class="share-buttons">
-          <span class="social-share">
-            <a target="_blank" href="https://twitter.com/intent/tweet?hashtags={{ page.tags | join: ',' | remove: ' ' }}&text={{ page.title | escape | replace:' ','%20' }}&url={{ site.url }}{{ page.url }}{% if author.twitter %}&via={{ author.twitter }}{% endif %}" title="Share on Twitter" itemprop="Twitter"><i class="ico-twitter-plain"></i></a>
-          </span>
-          <span class="social-share">
-            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" itemprop="Facebook"><i class="ico-facebook-plain"></i></a>
-          </span>
-          <span class="social-share">
-            <a target="_blank" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" itemprop="GooglePlus"><i class="ico-googleplus-plain"></i></a>
-          </span>
-          <span class="social-share">
-            <a target="_blank" href="https://flattr.com/submit/auto?user_id={{ site.owner.flattr }}&url={{ site.url }}{{ page.url }}&title={{ page.title }}&description={{ page.excerpt }}&language=en_US&tags={{ post.tags }}&category=text" title="Flattr this!" itemprop="Flattr"><i class="ico-flattr-plain"></i></a>
-          </span>
-        </div>
+        <span class="author-heading">Leave a tip</span>
+        <script id='fbumdoc'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=dyscribe&button=compact&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbumdoc');</script>
+
       </div>
 
       <div id="author-follow">

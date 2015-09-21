@@ -6,7 +6,7 @@ categories: raspberrypi tutorial
 tags: [raspberrypi, login, tutorial]
 image:
   feature: article-raspberry-pi-dashboard.jpg
-  card:
+  card: cards/raspberry-dashboard.jpg
 comments: true
 share: true
 date: 2015-09-18
