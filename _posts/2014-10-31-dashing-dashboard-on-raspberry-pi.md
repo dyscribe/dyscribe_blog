@@ -5,8 +5,8 @@ excerpt: "A beginner tutorial and guide on setting up a dashing dashboard on a r
 categories: raspberrypi, tutorial
 tags: [dashing, raspberrypi, tutorial]
 image:
-  feature: article-raspberry-pi.jpg
-  card: 
+  feature: article-raspberry-pi-dashboard.jpg
+  card:
 comments: true
 share: true
 date: 2014-10-31

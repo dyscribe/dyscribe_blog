@@ -5,7 +5,7 @@ excerpt: "Learn how to set up a Wifi connection for your Raspberry Pi under Rasp
 categories: raspberrypi tutorial
 tags: [raspberrypi, login, tutorial]
 image:
-  feature: article-raspberry-pi.jpg
+  feature: article-raspberry-pi-setup.jpg
   card:
 comments: true
 share: true
