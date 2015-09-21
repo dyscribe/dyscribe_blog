@@ -12,9 +12,6 @@ share: true
 date: 2015-09-18
 ---
 
-
-# Setup Wifi (Manual Configuration from Command Line)
-
 Foundation for this step has been taken from [a tutorial found on howtogeek](//www.howtogeek.com/167425/how-to-setup-wi-fi-on-your-raspberry-pi-via-the-command-line/).
 
  * Boot Raspberry Pi

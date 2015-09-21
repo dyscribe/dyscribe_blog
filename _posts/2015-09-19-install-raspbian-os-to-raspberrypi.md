@@ -12,8 +12,6 @@ share: true
 date: 2015-09-18
 ---
 
-# Installing Raspbian OS on a Raspberry Pi
-
 The foundation for this step was taken from [the official raspberry pi documentation](//www.raspberrypi.org/documentation/installation/installing-images/mac.md).
 
 Since we are just starting the _"Raspi"_ we need another computer to initially set up the SD card. For this tutorial I used a Macbook Pro with integrated SD card slot. First [download the Rasbian Image here...](https://www.raspberrypi.org/downloads/raspbian/)
@@ -39,9 +37,11 @@ Clone the Image to the SD card:
 Again `X` has to be same number of the disk you unmounted. The installation takes a while and does not show any progress. This is normal. It will notify on command line when it's done.
 
 Once you see an Output like
-```
+
+{% highlight bash %}
 	3125+0 records in
 	3125+0 records out
 	3276800000 bytes transferred in 1913.995733 secs (1712021 bytes/sec)
-```
-you are done. Remove the SD card, but it into your _Raspi_ and fire it up.
+{% endhighlight%}
+
+you are done. Remove the SD card savely, put it into your _Raspi_ and fire it up.

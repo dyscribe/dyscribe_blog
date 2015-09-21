@@ -11,7 +11,6 @@ comments: true
 share: true
 date: 2015-09-18
 ---
-# Boot a Raspberry Pi without entering login and password
 
 If you, like me, want to connect the _Raspi_ to a screen without having a keyboard you probably want to remove the password protection.
 To do that, we only need to change a single line in the file `/etc/inittab`.
