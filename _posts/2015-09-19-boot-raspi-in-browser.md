@@ -2,10 +2,10 @@
 layout: post
 title:  "Boot Raspberry Pi into a Browser in Kiosk mode"
 excerpt: "Make your Raspberry Pi open a website in a browser in kiosk mode as soon as you switch it on."
-categories: raspberrypi, tutorial
+categories: raspberrypi tutorial
 tags: [raspberrypi, login, tutorial]
 image:
-  feature: article-raspberry-pi.jpg
+  feature: article-raspberry-pi-dashboard.jpg
   card:
 comments: true
 share: true
@@ -16,7 +16,7 @@ date: 2015-09-18
 
 > It took me a while to find something that works easily and with no hassle. This is by far the easiest way I could find. If you have questions or ideas for improvement, let me know.
 
-In order to make this tutorial work, you maybe want to have look at my other tutorials on [how to install Raspbian to an SD card](), [how to disable the login prompt of a Raspberry Pi]() or [how to set up WIFI on a Raspberry Pi](). 
+In order to make this tutorial work, you maybe want to have look at my other tutorials on [how to install Raspbian to an SD card](), [how to disable the login prompt of a Raspberry Pi]() or [how to set up WIFI on a Raspberry Pi]().
 
 If you already got these figured out, here we go with the actual Tutorial:
 

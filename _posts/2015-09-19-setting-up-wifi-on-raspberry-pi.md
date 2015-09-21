@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Boot Raspberry Pi into a Browser in Kiosk mode"
-excerpt: "Make your Raspberry Pi open a website in a browser in kiosk mode as soon as you switch it on."
-categories: raspberrypi, tutorial
+title:  "Setup Wifi on a Raspberry Pi with Raspbian"
+excerpt: "Learn how to set up a Wifi connection for your Raspberry Pi under Raspbian OS. This tutorial will show you the setup from the command line. It works natively if you have a keyboard attached to your Pi. Recommended is a SSH remote access if you want to copy / paste the code snippets."
+categories: raspberrypi tutorial
 tags: [raspberrypi, login, tutorial]
 image:
   feature: article-raspberry-pi.jpg
