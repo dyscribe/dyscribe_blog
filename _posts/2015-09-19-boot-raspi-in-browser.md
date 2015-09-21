@@ -14,7 +14,7 @@ date: 2015-09-18
 
 > It took me a while to find something that works easily and with no hassle. This is by far the easiest way I could find. If you have questions or ideas for improvement, let me know.
 
-If you need some help in setting Wifi, SSH or other useful things, check out [my other Raspi tutorials here.]()//dyscribe.com/tags/#raspberrypi). If you already got these things figured out, here we go with the actual Tutorial:
+If you need some help in setting Wifi, SSH or other useful things, check out [my other Raspi tutorials here.](//dyscribe.com/tags/#raspberrypi). If you already got these things figured out, here we go with the actual Tutorial:
 
 ## Installing dependencies
 
