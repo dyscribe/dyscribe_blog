@@ -2,7 +2,7 @@
 layout: post
 title:  "Create Your Own Icon Font with Icomoon"
 excerpt: "Improve your website performance and stay flexible by using creating your own customized icon fonts with Icomoon."
-categories: article
+categories: webdesign
 tags: [webdevelopment, design, article]
 image:
   feature: article-iconfont_new.jpg

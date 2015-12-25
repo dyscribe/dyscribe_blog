@@ -1,16 +1,10 @@
 # Site navigation links
 
-- title: Latest
+- title: Blog
   url: /
-
-- title: Articles
-  url: /articles/
-
-- title: Stories
-  url: /stories/
-
-- title: Tutorials
-  url: /tutorials/
 
 - title: About
   url: /about/
+
+- title: Categories
+  url: /tags/

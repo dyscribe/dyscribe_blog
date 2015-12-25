@@ -1,22 +1,21 @@
 # Site wide configuration
-
 destination: ../html/dyscribe.com
 title: dyscribe.com
 subclaim: Mind. Code. Design.
 locale: en_US
 search: true
-baseurl: "/"
+baseurl: ""
+paginate: 4
+paginate_path: "posts/:num"
 # For local development switch url paramenter on and off
-url: "https://dyscribe.com"
-#url: http://localhost:3000
+# url: "https://dyscribe.com"
+url: http://localhost:4000
 asset: "//dyscribe.com/downloads/"
 
-
 # Jekyll configuration
-
-permalink:   /:categories/:title/
+permalink:   none
 markdown:    kramdown
-highlighter: pygments
+highlighter: redcarpet
 sass:
   sass_dir: _sass
   style: compressed
@@ -26,16 +25,18 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..2
-  use_coderay: false
+  enable_coderay: false
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "gulpfile.js", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
 
+# Jekyll plugins
+gems: [jekyll-paginate, jekyll-sitemap, jekyll-gist, kramdown, redcarpet]
 
 # Site owner
 owner:
   name: Kai Birkenfeld
-  bio: I'm a Project Manager & Web Developer <a target="_blank" href="http://www.jimdo.com">@Jimdo</a>. I play in a band called <a target="_blank" href="http://www.zwohandbreit.de">@zwohandbreit</a> and I blog at <a href="//dyscribe.com">dyscribe.com</a>
+  bio: I'm a Project Manager & Web Dude <a target="_blank" href="http://www.jimdo.com">@Jimdo</a>. I play in a band called <a target="_blank" href="http://www.zwohandbreit.de">@zwohandbreit</a>, podcast at <a target="_blank" href="http://aethermonolog.de">aethermonolog.de</a> and I blog at <a href="//dyscribe.com">dyscribe.com</a>
   avatar: logos/avatar_logo-100.png
   email: mail@dyscribe.com
   disqus-shortname: dyscribe
@@ -45,5 +46,3 @@ owner:
   google:
     plus: +KaiBirkenfeld
     verify: nwQS1Sfw2IfsArrmhJ1as61Pqe5-aaHzZdf_DKk-Yt4
-    ad-client:
-    ad-slot:

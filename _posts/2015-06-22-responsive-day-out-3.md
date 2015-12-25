@@ -2,7 +2,7 @@
 layout: post
 title:  "Responsive Day Out: The Final Breakpoint"
 excerpt: "A short summary of the third Responsive Day Out in Brighton, outlining the conference format, topics and my personal takeaways."
-categories: story
+categories: events
 tags: [conference, story, event]
 image:
   feature: article-responsive-day-out.jpg

@@ -4,7 +4,7 @@ excerpt: "A complete overview of all blog articles and tutorials sorted by date.
 ---
 
 <ul class="post-list">
-  {% for post in site.posts limit:20 %}
+  {% for post in paginator.posts %}
   <li>
       <article>
               <div class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></div>
@@ -19,3 +19,16 @@ excerpt: "A complete overview of all blog articles and tutorials sorted by date.
   </li>
   {% endfor %}
 </ul>
+
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/" class="previous"><< Neuere</a>
+    {% else %}
+    <a href="/posts/{{ paginator.previous_page }}" class="previous"><< Neuere</a>
+    {% endif %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="/posts/{{ paginator.next_page }}" class="next">Ältere >></a>
+  {% endif %}
+</nav>

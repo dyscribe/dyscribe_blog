@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up Wifi for your Raspberry Pi"
 excerpt: "This is a detailed tutorial to show you, how you can configure your Raspberry Pi to automatically connect to a Wifi of your choice. You will need your Raspi and a separate USB Wifi dongle."
-categories: raspberrypi tutorial
+categories: raspberrypi
 tags: [raspberrypi, login, tutorial]
 image:
   feature: article-raspberry-pi-setup.jpg
