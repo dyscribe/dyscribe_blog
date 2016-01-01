@@ -8,8 +8,8 @@ baseurl: ""
 paginate: 4
 paginate_path: "posts/:num"
 # For local development switch url paramenter on and off
-url: "https://dyscribe.com"
-#url: http://localhost:4000
+#url: "https://dyscribe.com"
+url: http://localhost:4000
 asset: "//dyscribe.com/downloads/"
 
 # Jekyll configuration
@@ -37,7 +37,7 @@ gems: [jekyll-paginate, jekyll-sitemap, jekyll-gist, kramdown, redcarpet]
 owner:
   name: Kai Birkenfeld
   bio: I'm a Project Manager & Web Dude <a target="_blank" href="http://www.jimdo.com">@Jimdo</a>. I play in a band called <a target="_blank" href="http://www.zwohandbreit.de">@zwohandbreit</a>, podcast at <a target="_blank" href="http://aethermonolog.de">aethermonolog.de</a> and I blog at <a href="//dyscribe.com">dyscribe.com</a>
-  avatar: logos/avatar_logo-100.png
+  avatar: avatar-100.jpg
   email: mail@dyscribe.com
   disqus-shortname: dyscribe
   twitter: dyscribe

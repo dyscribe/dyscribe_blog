@@ -21,11 +21,13 @@
           {% endif %}
         </header>
     </div>
+
     <div class="entry-wrapper">
       <div class="entry-content">
-        {{ content }}
 
-        {% include post_author.html %}
+        {% include author.html %}
+
+        {{ content }}
 
         <nav class="pagination" role="navigation">
           {% if page.previous %}

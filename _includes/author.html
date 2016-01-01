@@ -1,0 +1,17 @@
+<div class="post-author-content">
+  {% if page.author %}
+    {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
+  {% endif %}
+  {% if author.avatar contains 'http' %}
+    <a href="/about"><img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+  {% else %}
+    <a href="/about"><img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+  {% endif %}
+  <span class="post-author"><a href="/about">{{ author.name }}</a></span>
+  <span class="post-date">{{ page.date | date: '%B %d, %Y' }} &middot; {% assign words = content | number_of_words %}
+    {% if words < 360 %}
+      1 min
+    {% else %}
+      {{ words | divided_by:180 }} min read
+    {% endif %}</span>
+</div>

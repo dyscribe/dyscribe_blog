@@ -23,12 +23,12 @@ excerpt: "A complete overview of all blog articles and tutorials sorted by date.
 <nav class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <a href="/" class="previous"><< Neuere</a>
+    <a href="/" class="previous">&lang; Previous Page</a>
     {% else %}
-    <a href="/posts/{{ paginator.previous_page }}" class="previous"><< Neuere</a>
+    <a href="/posts/{{ paginator.previous_page }}" class="previous">&lang; Previous Page</a>
     {% endif %}
   {% endif %}
   {% if paginator.next_page %}
-    <a href="/posts/{{ paginator.next_page }}" class="next">Ältere >></a>
+    <a href="/posts/{{ paginator.next_page }}" class="next">Next Page &rang;</a>
   {% endif %}
 </nav>
