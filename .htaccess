@@ -1,3 +1,11 @@
+# BEGIN FEEDPRESS
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} !FeedValidator [NC]
+RewriteCond %{HTTP_USER_AGENT} !FeedPress [NC]
+RewriteRule ^feed.*$ http://feedpress.me/dyscribe [R=302,NC,L]
+# END FEEDPRESS
+
+
 # Disable directory browsing
 Options -Indexes
 
