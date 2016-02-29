@@ -3,6 +3,18 @@ layout: main
 excerpt: "A complete overview of all blog articles and tutorials sorted by date."
 ---
 
+<div class="language-switch">
+  <div class="button inactive left">
+    <a href="/en/">English Articles</a>
+  </div>
+  <div class="button active center">
+    <a href="/">All Aricles</a>
+  </div>
+  <div class="button inactive right">
+    <a href="/de/">Deutsche Artikel</a>
+  </div>
+</div>
+
 <ul class="post-list">
   {% for post in paginator.posts %}
   <li>

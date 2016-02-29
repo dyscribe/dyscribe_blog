@@ -28,6 +28,21 @@ RewriteCond %{HTTP_REFERER} ^http://.*social-buttons\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
+Redirect /podcasting/podcast-analytics-feedpress-vs-s3stat.html /en/podcasting/podcast-analytics-feedpress-vs-s3stat.html
+Redirect /podcasting/podcasting-with-jekyll-in-4-steps.html https://dyscribe.com/en/podcasting/podcasting-with-jekyll-in-4-steps.html
+Redirect /raspberrypi/setting-up-wifi-on-raspberry-pi.html https://dyscribe.com/en/raspberrypi/setting-up-wifi-on-raspberry-pi.html
+Redirect /raspberrypi/install-raspbian-os-to-raspberrypi.html https://dyscribe.com/en/raspberrypi/install-raspbian-os-to-raspberrypi.html
+Redirect /raspberrypi/disable-raspberrypi-login.html https://dyscribe.com/en/raspberrypi/disable-raspberrypi-login.html
+Redirect /raspberrypi/boot-raspi-in-browser.html https://dyscribe.com/en/raspberrypi/boot-raspi-in-browser.html
+Redirect /events/responsive-day-out-3.html https://dyscribe.com/en/events/responsive-day-out-3.html
+Redirect /webdesign/create-your-own-custom-iconfont.html https://dyscribe.com/en/webdesign/create-your-own-custom-iconfont.html
+Redirect /productivity/8-tools-to-improve-design-workflow.html https://dyscribe.com/en/productivity/8-tools-to-improve-design-workflow.html
+Redirect /webdesign/web-technology-badge-design.html https://dyscribe.com/en/webdesign/web-technology-badge-design.html
+Redirect /dashing-dashboard-on-raspberry-pi.html https://dyscribe.com/en/dashing-dashboard-on-raspberry-pi.html
+Redirect /productivity/markdown.html https://dyscribe.com/en/productivity/markdown.html
+Redirect /ux/ux-design-you-are-thinking-it-wrong.html https://dyscribe.com/en/ux/ux-design-you-are-thinking-it-wrong.html
+
+
 # Keep alive
 <IfModule mod_headers.c>
  Header set Connection keep-alive

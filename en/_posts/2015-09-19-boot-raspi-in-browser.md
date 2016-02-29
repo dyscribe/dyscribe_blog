@@ -2,7 +2,7 @@
 layout: post
 title:  "Open a website in fullscreen on a Raspberr Pi"
 excerpt: "This tutorial will show you how to automatically open a website in a fullscreen browser on a Raspberry Pi once you turn it on. We will configure the Pi so that it runs a script by itself, once you switch it on and then opens a website of your choice in a kiosk mode browser."
-categories: raspberrypi
+categories: [raspberrypi, en]
 tags: [raspberrypi, login, tutorial]
 image:
   feature: article-raspberry-pi-dashboard.jpg

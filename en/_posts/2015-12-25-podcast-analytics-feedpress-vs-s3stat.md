@@ -2,7 +2,7 @@
 layout: post
 title:  "Podcast Analytics: FeedPress vs. S3Stat"
 excerpt: "I recently dug myself into a new podcasting project. After I got my feed over to iTunes I was quite surprised that there is no official way to get subscriber numbers or any other data insights. Guide me on my journey into finding out how to handle podcast analytics..."
-categories: podcasting
+categories: [podcasting, en]
 tags: [podcasting, analytics, aws, s3stats, feedpress]
 image:
   feature: article-podcasting.jpg
@@ -22,7 +22,7 @@ So far very easy and since S3 is free of charge for the first year it had cost m
 Honestly, I was surprised that there is no way to get data on your podcast from Apple. You can't even see the amount of subscribers you have. Really disappointing!
 I'm not a data guy, but I was hoping to at least check out my number of subscribers or plays.
 
-##### TLDR;
+##### TL;DR
 > Podcasting on iTunes comes without data. You need to set it up yourself. I found 2 possible candidates: [S3Stat](http://s3stat.com) and [FeedPress](https://feed.press/?affid=10971)
 
 ## FeedPress to the rescue?
@@ -59,7 +59,7 @@ Here's an example of [FeedPress](https://feed.press/?affid=10971):
 FeedPress is dedicated to Podcasters, that is great! But also they offer a lot of "Services" that I find _half baked_. Newsletter and Hosting are nice things, but I like highly specified services better than "all in one" solutions - might just be me  - though I must say that FeedPress offers a connection to Mailchimp. I use Mailchimp as a newsletter system and I appreciated that it is possible.
 The biggest downside was the hard time to get it running, caused by the lack of clear tasks and hardly accessible documentation or features. Information that was helpful felt hidden in the depth of the interface.
 
-##### TLDR;
+##### TL;DR;
 > [S3Stat](http://s3stat.com) is the better and more advanced data service on S3. If you start from scratch, [FeedPress](https://feed.press/?affid=10971) is worth a look.
 
 After all I decided to stick with [S3Stat](http://s3stat.com). That is firstly because I hate when stuff drains to much time from my schedule. S3Stat was fast and easily setup - that's a big thumbs up. Secondly the amount of overall data insights (like specific number of hits on an episode) is the kind of information I was looking for and can somehow compensate not having the actual subscriber count.

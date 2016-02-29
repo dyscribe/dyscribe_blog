@@ -2,7 +2,7 @@
 layout: post
 title:  "Setup a Dashing Dashboard on Raspberry Pi from Scratch"
 excerpt: "A beginner tutorial and guide on setting up a dashing dashboard on a raspberry pi, starting completly from scratch."
-categories: raspberrypi
+categories: [en]
 tags: [dashing, raspberrypi, tutorial]
 image:
   feature: article-raspberry-pi-dashboard.jpg
