@@ -2,7 +2,7 @@
 layout: post
 title:  "Dark Souls 2 - Official Soundtrack Cover (Fan Art)"
 excerpt: "Ein selbstgemachtes Cover zum Dark Souls 2 Soundtrack. Hier runterladen..."
-categories: de
+categories: [de]
 tags: [gaming, cover]
 image:
   feature: article-darksouls.jpg

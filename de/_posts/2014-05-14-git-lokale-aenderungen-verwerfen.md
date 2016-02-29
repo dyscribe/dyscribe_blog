@@ -12,7 +12,7 @@ share: true
 date: 2014-05-13
 ---
 
-Es kommt gelegentlich vor, das lokale änderungen nicht so laufen wie geplant, und man den letzten funktionierenden Arbeitsstand eines Git Repos wiederherstellen möchte. Der Weg dahin ist sehr einfach...
+Es kommt gelegentlich vor, das lokale Änderungen nicht so laufen wie geplant, und man den letzten funktionierenden Arbeitsstand eines Git Repos wiederherstellen möchte. Der Weg dahin ist sehr einfach...
 
 ## Git Repo zurücksetzen
 
