@@ -5,7 +5,6 @@ RewriteCond %{HTTP_USER_AGENT} !FeedPress [NC]
 RewriteRule ^feed.*$ http://feedpress.me/dyscribe [R=302,NC,L]
 # END FEEDPRESS
 
-
 # Disable directory browsing
 Options -Indexes
 
@@ -28,6 +27,8 @@ RewriteCond %{HTTP_REFERER} ^http://.*social-buttons\.com/ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC]
 RewriteRule ^(.*)$ – [F,L]
 
+# Redirects for changed Content
+RewriteEngine On
 Redirect /podcasting/podcast-analytics-feedpress-vs-s3stat/ https://dyscribe.com/en/podcasting/podcast-analytics-feedpress-vs-s3stat/
 Redirect /podcasting/podcasting-with-jekyll-in-4-steps/ https://dyscribe.com/en/podcasting/podcasting-with-jekyll-in-4-steps/
 Redirect /raspberrypi/setting-up-wifi-on-raspberry-pi/ https://dyscribe.com/en/raspberrypi/setting-up-wifi-on-raspberry-pi/
@@ -44,7 +45,7 @@ Redirect /ux/ux-design-you-are-thinking-it-wrong/ https://dyscribe.com/en/ux/ux-
 Redirect /blog/create-your-own-custom-iconfont/ https://dyscribe.com/en/webdesign/create-your-own-custom-iconfont/
 Redirect /article/create-your-own-custom-iconfont/
 https://dyscribe.com/en/webdesign/create-your-own-custom-iconfont/
-
+# End Redirects
 
 # Keep alive
 <IfModule mod_headers.c>
