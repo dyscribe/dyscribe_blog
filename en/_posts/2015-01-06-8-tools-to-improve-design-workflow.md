@@ -2,7 +2,7 @@
 layout: post
 title:  "8 Tools to Improve Your Workflow as a Designer"
 excerpt: "If you are looking to improve your design workflow these 8 tools will do the trick! Become inspired, colaborate or just get things done faster..."
-categories: productivity
+categories: [productivity, en]
 tags: [design, workflow, tooling, article]
 image:
   feature: article-design-tools.jpg
@@ -17,7 +17,7 @@ I'm sure you know some of them already, but maybe you find some new ones here as
 
 ## Pixelapse: Versioning for Graphic Files
 
-![Pixelapse Website](//dyscribe.com/images/design_tool_assets/pixelapse.jpg)
+![Pixelapse Website](/images/design_tool_assets/pixelapse.jpg)
 
 Basically Pixelapse is [Github](//techcrunch.com/2012/07/14/what-exactly-is-github-anyway/) for Designers. So a tool that gives you versioning, backup and collaborative features specialized for graphic files. It comes as a web app and works with all of the common [Adobe](//www.adobe.com/) Giants (Photoshop, Illustrator, Fireworks, Indesign, Flash) as well as [SketchApp](//www.bohemiancoding.com/sketch/).
 
@@ -26,7 +26,7 @@ Basically Pixelapse is [Github](//techcrunch.com/2012/07/14/what-exactly-is-gith
 
 ## Trello: Digital Kanban to Get Shit Done!
 
-![Trello Website](//dyscribe.com/images/design_tool_assets/trello.jpg)
+![Trello Website](/images/design_tool_assets/trello.jpg)
 
 [Kanban](//kanbanblog.com/explained/) was my personal revelation when it comes to getting things done. [Trello](https://trello.com/kaibirkenfeld/recommend) is the perfect tool for digital Kanban - in other words to organize your work and keep track of status and progress of tasks. The [basic Version](https://trello.com/kaibirkenfeld/recommend) is free and provides all the functionality to start your own Kanban / Kaizen Workflow.
 
@@ -35,7 +35,7 @@ Basically Pixelapse is [Github](//techcrunch.com/2012/07/14/what-exactly-is-gith
 
 ## TinyPNG: Photoshop Plugin for PNG Compression
 
-![Tiny PNG Photoshop Plugin Website](//dyscribe.com/images/design_tool_assets/tinypng.jpg)
+![Tiny PNG Photoshop Plugin Website](/images/design_tool_assets/tinypng.jpg)
 
 Graphics easily become size intense. For websites, mail attachments, or whenever the "size matters", lossless image compression is what you want! [TinyPNG](https://tinypng.com/) offers a web-app that easily compresses PNG images for you with a simple drag and drop interface.
 They also provide a [Photoshop Plugin](https://tinypng.com/photoshop) available for $40 that enables you to export losslessly compressed PNGs right out of Photoshop on Mac and Windows.
@@ -44,7 +44,7 @@ They also provide a [Photoshop Plugin](https://tinypng.com/photoshop) available 
 
 ## Slicy: Batch Export Photoshop Layers
 
-![Slicy Website](//dyscribe.com/images/design_tool_assets/slicy.jpg)
+![Slicy Website](/images/design_tool_assets/slicy.jpg)
 
 [Slicy](//macrabbit.com/slicy/) is a nice little Helper that you can simply drag PSD Files on. It is capable of exporting different layers of a file into different formats. It will never replace a common export but can become handy for some specific tasks.
 Just add the file extension to the layer name and Slicy will take care of the rest.
@@ -54,7 +54,7 @@ Becomes very handy when you need to export a lot of layers in same or different 
 
 ## Behance: Designer-Facebook á la Adobe
 
-![Behance Website](//dyscribe.com/images/design_tool_assets/behance.jpg)
+![Behance Website](/images/design_tool_assets/behance.jpg)
 
 [Behance](//behance.net) is a social network that focuses on designers. You can upload projects or work in progress to gather feedback, gain reputation or even be hired for jobs.
 It is a good solution to get in touch and inspired by and with other designers.
@@ -64,7 +64,7 @@ You can also build up and share your portfolio through the Web App as through na
 
 ## Pinterest: Moodboards in Minutes
 
-![Pinterest Website](//dyscribe.com/images/design_tool_assets/pinterest.jpg)
+![Pinterest Website](/images/design_tool_assets/pinterest.jpg)
 
 [Pinterest](//pinterest.com) is a great tool to quickly gather and organize visual input. For me it is the best tool to create fast moodboards or inspirational collages and sort them by topics of projects. Just give it a try!
 
@@ -73,7 +73,7 @@ You can also build up and share your portfolio through the Web App as through na
 
 ## Skala: Instant Mobile Preview
 
-![Skala Website](//dyscribe.com/images/design_tool_assets/skala.jpg)
+![Skala Website](/images/design_tool_assets/skala.jpg)
 
 With [Skala Preview](//bjango.com/mac/skalapreview/) you can get realtime previews from Photoshop (CS5+) directly onto your device (as long as all devices are conneted to the same Wifi). Ideal if you are working on visuals or UI design for apps. It works on both iOS and Android.
 
@@ -81,7 +81,7 @@ With [Skala Preview](//bjango.com/mac/skalapreview/) you can get realtime previe
 
 ## Prepo: Retina Image and Icon Conversion
 
-![Prepo Website](//dyscribe.com/images/design_tool_assets/prepo.jpg)
+![Prepo Website](/images/design_tool_assets/prepo.jpg)
 
 Speaking of App development and styling: [Prepo 2](//wearemothership.com/work/prepo/) is a Mac app that will help you to convert app icons and @2x retina images, easily and pixel perfect. No more manual scaling - it will save you a few minutes each time.
 

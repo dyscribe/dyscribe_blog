@@ -2,7 +2,7 @@
 layout: post
 title:  "Podcasting with Jekyll in 4 Steps"
 excerpt: "After a while of pondering around the idea of an podcast I finally had an idea worth going for and started a new podcasting project. Check out how to set up Jekyll for podcasting in a few simple steps."
-categories: podcasting
+categories: [podcasting, en]
 tags: [podcasting, jekyll, itunes, rss]
 image:
   feature: article-podcasting-studio.jpg

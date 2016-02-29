@@ -1,0 +1,46 @@
+---
+layout: main
+excerpt: "A complete overview of all blog articles and tutorials sorted by date."
+---
+
+<div class="language-switch">
+  <div class="button inactive left">
+    <a href="/en/">English Articles</a>
+  </div>
+  <div class="button inactive center">
+    <a href="/">All Aricles</a>
+  </div>
+  <div class="button active right">
+    <a href="/de/">Deutsche Artikel</a>
+  </div>
+</div>
+
+<ul class="post-list">
+  {% for post in site.categories.de %}
+      <li>
+          <article>
+                  <div class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time></div>
+                  <div class="entry-image" style="background-image:url({{ site.url }}/images/{{ post.image.feature }})";>
+                    <h2>
+                      <a class="entry-link" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    </h2>
+                  </div>
+                  <div class="entry-excerpt">{{ post.excerpt }}</div>
+                  <div class="cta-button"><a href="{{ post.url }}">Artikel lesen</a></div>
+          </article>
+      </li>
+  {% endfor %}
+</ul>
+
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/" class="previous">&lang; Previous Page</a>
+      {% else %}
+      <a href="/posts/{{ paginator.previous_page }}" class="previous">&lang; Previous Page</a>
+      {% endif %}
+  {% endif %}
+  {% if paginator.next_page %}
+      <a href="/posts/{{ paginator.next_page }}" class="next">Next Page &rang;</a>
+  {% endif %}
+</nav>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Web Technology Badge Design"
 excerpt: "An approach to create logos for responsive web design (RWD) and JavaScript (JS) that are similiar to the current HTML5 and CSS3 Badges."
-categories: webdesign
+categories: [en]
 tags: [design, technology, rwd, article]
 image:
   feature: article-badge-design.jpg

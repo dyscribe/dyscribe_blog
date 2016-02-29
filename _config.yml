@@ -7,6 +7,7 @@ search: true
 baseurl: ""
 paginate: 4
 paginate_path: "posts/:num"
+permalin: slug
 # For local development switch url paramenter on and off
 url: "https://dyscribe.com"
 #url: http://localhost:4000

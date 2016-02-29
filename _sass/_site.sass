@@ -280,3 +280,39 @@ pre
 
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, .highlight
   +transition(all 0.2s ease)
+
+// Language Switcher
+// ---------------------------------------------------
+
+.language-switch
+  font-size: 0.6em
+  text-shadow: 1px 1px 1px darken($pale-green, 5%)
+  text-align: center
+  margin-bottom: 1em
+  @media (min-width: 399px)
+    font-size: 0.8em
+
+  .button
+    display: inline-block
+    a
+      padding: 0.5em 1em
+      border: 1px solid $pale-green
+      margin-right: -6px
+  .active a
+    background-color: $pale-green
+    color: $white
+    &:hover
+      background-color: $pale-green
+  .inactive a
+    background-color: $white
+    color: $pale-green
+    text-shadow: none
+    &:hover
+      background-color: lighten($pale-green, 5%)
+      color: $white
+  .center a
+    border-radius: 0
+  .left a
+    border-radius: 5px 0 0 5px
+  .right a
+    border-radius: 0 5px 5px 0
