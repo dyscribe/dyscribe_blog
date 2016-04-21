@@ -43,7 +43,7 @@ That went fast! The first data came in about 24 hours later and is reporting my 
 
 Here's an example of [S3Stat](http://s3stat.com) in action:
 
-![](/images/s3stat-vs-feedpress/s3stat-browsers@2x.jpg)
+![](//dyscribe.com/images/images/s3stat-vs-feedpress/s3stat-browsers@2x.jpg)
 
 ## 6 days later: FeedPress we need to talk
 
@@ -51,7 +51,7 @@ I really had a hard time figuring out how to get [FeedPress](https://feed.press/
 
 Here's an example of [FeedPress](https://feed.press/?affid=10971):
 
-![](/images/s3stat-vs-feedpress/feedpress-subs@2x.jpg)
+![](//dyscribe.com/images/images/s3stat-vs-feedpress/feedpress-subs@2x.jpg)
 
 ## Wrapping up
 
